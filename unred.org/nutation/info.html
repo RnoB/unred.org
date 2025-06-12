@@ -1,0 +1,178 @@
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50034118-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../rbastien/renaud.css" />
+  <title>
+    Nutation Simulator
+  </title>
+
+
+</head>
+
+<body>  
+
+  <header>
+    <a href="index.html">Nutation Simulator</a>
+  </header>
+
+
+  <table class="sqtable">
+    <tr>
+      <td width="675px" height="100px"><p class="publis"> This simulator has been realised to give a visual understanding in 3 dimensions of plants nutation, the circular movements of plants during their development. The driver of the movement, the differential growth is related to the curvature of the plants through the following equation </p> </td>
+    </tr>
+    <tr>
+      <td height="125px"><img src="./images/equation.png" width="300"> </td>
+    </tr>
+    <tr>
+      <td width="675px" height="100px"><p class="publis"> An internal oscillator is driving the movement by constantly switching the directon of the growth differential </p> </td>
+    </tr>
+  </tr>
+  <tr>
+    <td height="180px"><img src="./images/oscillator.png" width="400"> </td>
+  </tr>
+  <tr>
+    <td width="675px" height="50px"><p class="publis"> Finally elongation can be introduced by an increase of the length of each element of the stem over time </p> </td>
+  </tr>
+</tr>
+<tr>
+  <td height="50px"><img src="./images/elongation.png" width="250"> </td>
+</tr>
+<tr>
+  <td width="675px" height="50px"><p class="publis"> And the elongation can be limited to a subapical zone </p> </td>
+</tr>
+</tr>
+<tr>
+  <td height="50px"><img src="./images/subapical.png" width="300"> </td>
+</tr>
+<tr>
+  <td height="60px"><p class="subtitle"> Pre Defined Solutions</font> </td>
+</tr>
+<tr>
+  <td height="60px"><p class="publis"> A set of pre-defined solutions can be accessed with the key numbers (0-5). They provide an instantaneous access to the pattern observed with the simulator</font> </td>
+</tr>
+<table class="sqtable">
+  <tr>
+    <td width="225px" height="50px">Key </td>
+    <td width="450px"></td></tr>
+    <tr><td width="225px" height="10px">0 </td>
+      <td width="450px"><p class="parameters">Circular pattern centered around the base of the organ</p>
+      </td>
+    </tr>
+    <tr><td width="225px" height="10px">1</td>
+      <td width="450px"><p class="parameters">Circular pattern not centered around the base of the organ</p>
+      </td>
+    </tr>
+    <tr><td width="225px" height="10px">2</td>
+      <td width="450px"><p class="parameters">No rotation of the principal direction of the growth differentual</p>
+      </td>
+    </tr>
+    <tr><td width="225px" height="10px">3</td>
+      <td width="450px"><p class="parameters">Influence of proprioception on a circular pattern not centered around the base of the organ</p>
+      </td>
+    </tr>
+    <tr><td width="225px" height="10px">4</td>
+      <td width="450px"><p class="parameters">Influence of proprioception and elongation on a circular pattern not centered around the base of the organ</p>
+      </td>
+    </tr>
+    <tr><td width="225px" height="10px">5</td>
+      <td width="450px"><p class="parameters">Influence of proprioception and subapical elongationon a circular pattern not centered around the base of the organ</p>
+      </td>
+    </tr>
+  </td>
+</tr>
+
+</table> 
+</tr>
+<tr>
+  <td height="120px"><p class="subtitle"> Parameters</font> </td>
+</tr>
+</tr>
+<tr>
+  <td height="120px"><p class="subtitle"> </font> </td>
+</tr>
+</table> 
+<table class="sqtable">
+  <tr>
+    <td width="225px" height="50px"><img src="./images/s.png" width="20"> </td>
+    <td width="450px"><p class="parameters">Curvilinear abscissa along the organ</p>
+    </td>
+  </tr>
+  <tr><td width="225px" height="10px"><img src="./images/t.png" width="20"> </td>
+    <td width="450px"><p class="parameters">Time</p>
+    </td>
+  </tr>
+  <tr><td width="225px" height="10px"><img src="./images/L.png" width="40"> </td>
+    <td width="450px"><p class="parameters">Length of the organ</p>
+    </td>
+  </tr>
+  <tr><td width="225px" height="10px"><img src="./images/Lgz.png" width="40"> </td>
+    <td width="450px"><p class="parameters">Length of the growth zone</p>
+    </td>
+  </tr>
+  <tr><td width="225px" height="10px"><img src="./images/C.png" width="60"> </td>
+    <td width="450px"><p class="parameters">Curvature</p>
+    </td>
+  </tr>
+  <tr><td width="225px" height="10px"><img src="./images/E.png" width="30"> </td>
+    <td width="450px"><p class="parameters">Relative Elemental Growth Rate (REGR)</p>
+    </td>
+  </tr>
+
+  <tr><td width="225px" height="10px"><img src="./images/pc.png" width="40"> </td>
+    <td width="450px"><p class="parameters">Principal direction of curvature</p>
+    </td>
+  </tr>
+  <tr><td width="225px" height="10px"><img src="./images/pg.png" width="40"> </td>
+    <td width="450px"><p class="parameters">Principal direction of the growth differential</p>
+    </td>
+  </tr>
+  <tr><td width="225px" height="10px"><img src="./images/w0.png" width="40"> </td>
+    <td width="450px"><p class="parameters">Angular velocity of the growth differential</p>
+    </td>
+  </tr>     
+  <tr><td width="225px" height="10px"><img src="./images/f.png" width="30"> </td>
+    <td width="450px"><p class="parameters">Frequency of the angular velocity</p>
+    </td>
+  </tr>    
+  <tr><td width="225px" height="10px"><img src="./images/g.png" width="30"> </td>
+    <td width="450px"><p class="parameters">Proprioception</p>
+    </td>
+  </tr> 
+
+  <tr><td width="225px" height="10px"><img src="./images/d.png" width="60"> </td>
+    <td width="450px"><p class="parameters">REGR in the principal direction of the growth differential</p>
+    </td>
+  </tr>
+  <tr><td width="225px" height="10px"><img src="./images/dpa.png" width="70"> </td>
+    <td width="450px"><p class="parameters">REGR in the principal direction of curvature</p>
+    </td>
+  </tr>
+  <tr><td width="225px" height="10px"><img src="./images/dpe.png" width="80"> </td>
+    <td width="450px"><p class="parameters">REGR in the direction orthotgonal to the principal direction of curvature</p>
+    </td>
+  </tr>
+
+</table> 
+<table class="sqtable">
+</tr>
+<tr>
+  <td width="675px" height="60px"><p class="subtitle"> Reference</font> </td></tr>
+  <tr><td width="675px" height="60px"><p class="publis"><a href="http://arxiv.org/abs/1603.00459">Bastien, R. and Meroz, Y., 2016. The Dynamics of Plant Nutation Result From the Slaving of Curvature to the Orientation of Differential Growth. arXiv preprint arXiv:1603.00459.</a></p> </td>
+  </tr>
+  <tr><td width="675px" height="60px"><p class="publis"><a href="https://github.com/RnoB/Nutation-Simulator">Source Code</a></p> </td>
+  </tr>
+</table> 
+</body>
+</html>
